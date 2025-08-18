@@ -5,7 +5,9 @@
     "fields": {
       "name": "Electronics",
       "slug": "electronics",
-      "description": "Electronic devices and gadgets"
+      "description": "Electronic devices and gadgets",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -14,7 +16,9 @@
     "fields": {
       "name": "Clothing",
       "slug": "clothing",
-      "description": "Fashion and apparel"
+      "description": "Fashion and apparel",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -23,7 +27,9 @@
     "fields": {
       "name": "Books",
       "slug": "books",
-      "description": "Books and literature"
+      "description": "Books and literature",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -32,7 +38,9 @@
     "fields": {
       "name": "Home & Garden",
       "slug": "home-garden",
-      "description": "Home improvement and garden supplies"
+      "description": "Home improvement and garden supplies",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -41,7 +49,9 @@
     "fields": {
       "name": "Sports & Fitness",
       "slug": "sports-fitness",
-      "description": "Sports equipment and fitness gear"
+      "description": "Sports equipment and fitness gear",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -50,7 +60,9 @@
     "fields": {
       "name": "Beauty & Health",
       "slug": "beauty-health",
-      "description": "Beauty products and health essentials"
+      "description": "Beauty products and health essentials",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -64,7 +76,9 @@
       "category": 1,
       "stock": 25,
       "available": true,
-      "image": "products/smartphone-pro_ultra_precise.jpg"
+      "image": "products/smartphone-pro_ultra_precise.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -78,7 +92,9 @@
       "category": 1,
       "stock": 20,
       "available": true,
-      "image": "products/smartphone-pro_ultra_precise.jpg"
+      "image": "products/smartphone-pro_ultra_precise.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -92,7 +108,9 @@
       "category": 1,
       "stock": 35,
       "available": true,
-      "image": "products/wireless-headphones_ultra_precise.jpg"
+      "image": "products/wireless-headphones_ultra_precise.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -106,7 +124,9 @@
       "category": 1,
       "stock": 15,
       "available": true,
-      "image": "products/laptop-ultra_ultra_precise.jpg"
+      "image": "products/laptop-ultra_ultra_precise.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -120,9 +140,11 @@
       "category": 1,
       "stock": 40,
       "available": true,
-      "image": "products/smart-watch_ultra_precise.jpg"
+      "image": "products/smart-watch_ultra_precise.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
-},
+  },
   {
     "model": "store.product",
     "pk": 6,
@@ -134,7 +156,9 @@
       "category": 2,
       "stock": 60,
       "available": true,
-      "image": "products/running-shoes_audited.jpg"
+      "image": "products/running-shoes_audited.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -148,7 +172,9 @@
       "category": 2,
       "stock": 45,
       "available": true,
-      "image": "products/denim-jeans_audited.jpg"
+      "image": "products/denim-jeans_audited.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -162,7 +188,9 @@
       "category": 2,
       "stock": 30,
       "available": true,
-      "image": "products/running-shoes_audited.jpg"
+      "image": "products/running-shoes_audited.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -176,7 +204,9 @@
       "category": 2,
       "stock": 55,
       "available": true,
-      "image": "products/winter-jacket_audited.jpg"
+      "image": "products/winter-jacket_audited.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -190,7 +220,9 @@
       "category": 2,
       "stock": 80,
       "available": true,
-      "image": "products/cotton-t-shirt_audited.jpg"
+      "image": "products/cotton-t-shirt_audited.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -204,7 +236,9 @@
       "category": 3,
       "stock": 25,
       "available": true,
-      "image": "products/clean-code-book.jpg"
+      "image": "products/clean-code-book.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -218,7 +252,9 @@
       "category": 3,
       "stock": 30,
       "available": true,
-      "image": "products/pragmatic-programmer.jpg"
+      "image": "products/pragmatic-programmer.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -232,7 +268,9 @@
       "category": 3,
       "stock": 50,
       "available": true,
-      "image": "products/atomic-habits.jpg"
+      "image": "products/atomic-habits.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -246,7 +284,9 @@
       "category": 4,
       "stock": 20,
       "available": true,
-      "image": "products/instant-pot-duo.jpg"
+      "image": "products/instant-pot-duo.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   },
   {
@@ -260,7 +300,9 @@
       "category": 4,
       "stock": 35,
       "available": true,
-      "image": "products/ninja-blender.jpg"
+      "image": "products/ninja-blender.jpg",
+      "created_at": "2025-08-19T00:00:00Z",
+      "updated_at": "2025-08-19T00:00:00Z"
     }
   }
 ]
