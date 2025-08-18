@@ -24,9 +24,14 @@ urlpatterns = [
     path('', include('store.urls')),
 ]
 
-# Serve media files in both development and production
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-# Serve static files only in development (production uses whitenoise)
+# Handle media files
 if settings.DEBUG:
+    # Development: serve both static and media files
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+else:
+    # Production: serve media files through custom view
+    from store.media_views import serve_media
+    urlpatterns += [
+        path('media/<path:file_path>', serve_media, name='serve_media'),
+    ]
