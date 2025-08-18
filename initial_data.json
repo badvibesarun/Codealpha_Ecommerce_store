@@ -236,7 +236,7 @@
       "category": 3,
       "stock": 25,
       "available": true,
-      "image": "products/clean-code-book.jpg",
+      "image": "products/python-programming-guide_audited.jpg",
       "created_at": "2025-08-19T00:00:00Z",
       "updated_at": "2025-08-19T00:00:00Z"
     }
@@ -252,7 +252,7 @@
       "category": 3,
       "stock": 30,
       "available": true,
-      "image": "products/pragmatic-programmer.jpg",
+      "image": "products/web-development-handbook_audited.jpg",
       "created_at": "2025-08-19T00:00:00Z",
       "updated_at": "2025-08-19T00:00:00Z"
     }
@@ -268,7 +268,7 @@
       "category": 3,
       "stock": 50,
       "available": true,
-      "image": "products/atomic-habits.jpg",
+      "image": "products/science-fiction-novel_audited.jpg",
       "created_at": "2025-08-19T00:00:00Z",
       "updated_at": "2025-08-19T00:00:00Z"
     }
@@ -284,7 +284,7 @@
       "category": 4,
       "stock": 20,
       "available": true,
-      "image": "products/instant-pot-duo.jpg",
+      "image": "products/coffee-maker_audited.jpg",
       "created_at": "2025-08-19T00:00:00Z",
       "updated_at": "2025-08-19T00:00:00Z"
     }
@@ -300,7 +300,7 @@
       "category": 4,
       "stock": 35,
       "available": true,
-      "image": "products/ninja-blender.jpg",
+      "image": "products/bluetooth-speaker_ultra_precise.jpg",
       "created_at": "2025-08-19T00:00:00Z",
       "updated_at": "2025-08-19T00:00:00Z"
     }
