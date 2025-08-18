@@ -14,14 +14,14 @@ python manage.py collectstatic --no-input
 
 # Create media directory and copy files
 echo "📁 Setting up media directory..."
-mkdir -p /opt/render/project/src/media/products
 
-# Copy media files if they exist in repository
+# In Render, we're already in /opt/render/project/src/, so files are in the right place
+# Just ensure the media directory exists and show the files
 if [ -d "media/products" ] && [ "$(ls -A media/products 2>/dev/null)" ]; then
-    echo "Copying media files from repository..."
-    cp -r media/products/* /opt/render/project/src/media/products/
-    echo "Media files copied successfully"
-    ls -la /opt/render/project/src/media/products/ | head -10
+    echo "Media files found in repository:"
+    ls -la media/products/ | head -10
+    echo "Total media files: $(ls media/products/ | wc -l)"
+    echo "Media files are ready for serving"
 else
     echo "No media files found in repository"
     echo "Repository contents:"
