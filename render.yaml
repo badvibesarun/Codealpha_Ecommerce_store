@@ -1,3 +1,8 @@
+databases:
+  - name: shopsphere-db
+    databaseName: shopsphere
+    user: shopsphere
+
 services:
   - type: web
     name: shopsphere-backend
@@ -16,12 +21,6 @@ services:
       - key: WEB_CONCURRENCY
         value: 4
       - key: DATABASE_URL
-        fromService:
-          type: pserv
+        fromDatabase:
           name: shopsphere-db
           property: connectionString
-
-  - type: pserv
-    name: shopsphere-db
-    env: postgresql
-    plan: starter
