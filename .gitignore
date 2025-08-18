@@ -40,8 +40,10 @@ venv.bak/
 .env.local
 .env.production
 
-# Media files (for development)
-media/
+# Media files (for development) - keep uploaded media but not user uploads
+# media/
+# Note: Including media/products/ for initial demo images
+media/user_uploads/
 
 # Static files (collected)
 staticfiles/

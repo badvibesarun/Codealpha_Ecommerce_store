@@ -12,10 +12,21 @@ pip install -r requirements.txt
 echo "📁 Collecting static files..."
 python manage.py collectstatic --no-input
 
-# Create media directory
+# Create media directory and copy files
 echo "📁 Setting up media directory..."
 mkdir -p /opt/render/project/src/media/products
-cp -r media/products/* /opt/render/project/src/media/products/ || true
+
+# Copy media files if they exist in repository
+if [ -d "media/products" ] && [ "$(ls -A media/products 2>/dev/null)" ]; then
+    echo "Copying media files from repository..."
+    cp -r media/products/* /opt/render/project/src/media/products/
+    echo "Media files copied successfully"
+    ls -la /opt/render/project/src/media/products/ | head -10
+else
+    echo "No media files found in repository"
+    echo "Repository contents:"
+    ls -la media/ || echo "No media directory found"
+fi
 
 # Run migrations
 echo "🗄️ Running database migrations..."

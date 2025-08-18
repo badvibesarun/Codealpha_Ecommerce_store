@@ -124,7 +124,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/opt/render/project/src/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# For production deployment, ensure media files are properly served
+# Render stores files in /opt/render/project/src/
+if os.environ.get('RENDER'):
+    MEDIA_ROOT = '/opt/render/project/src/media'
 
 # Serve media files through Django in production (not recommended for high traffic, but okay for demo)
 STORAGES = {
