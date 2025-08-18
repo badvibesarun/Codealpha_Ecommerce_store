@@ -25,5 +25,3 @@ services:
     name: shopsphere-db
     env: postgresql
     plan: starter
-    databaseName: shopsphere
-    databaseUser: shopsphere
