@@ -4,7 +4,6 @@ services:
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn ecommerce_store.wsgi:application"
-    autoDeploy: true
     envVars:
       - key: PYTHON_VERSION
         value: 3.13.4
@@ -26,10 +25,5 @@ services:
     name: shopsphere-db
     env: postgresql
     plan: starter
-    ipAllowList: []  # optional (can be removed)
     databaseName: shopsphere
     databaseUser: shopsphere
-    disk:
-      name: data
-      mountPath: /var/lib/postgresql/data
-      sizeGB: 10
