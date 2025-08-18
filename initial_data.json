@@ -1,0 +1,266 @@
+[
+  {
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Electronic devices and gadgets"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Clothing",
+      "slug": "clothing",
+      "description": "Fashion and apparel"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 3,
+    "fields": {
+      "name": "Books",
+      "slug": "books",
+      "description": "Books and literature"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+      "name": "Home & Garden",
+      "slug": "home-garden",
+      "description": "Home improvement and garden supplies"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+      "name": "Sports & Fitness",
+      "slug": "sports-fitness",
+      "description": "Sports equipment and fitness gear"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 6,
+    "fields": {
+      "name": "Beauty & Health",
+      "slug": "beauty-health",
+      "description": "Beauty products and health essentials"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "iPhone 15 Pro",
+      "slug": "iphone-15-pro",
+      "description": "Latest iPhone with A17 Pro chip, titanium design, and advanced camera system. Features 6.1-inch Super Retina XDR display.",
+      "price": "999.99",
+      "category": 1,
+      "stock": 25,
+      "available": true,
+      "image": "products/smartphone-pro_ultra_precise.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "Samsung Galaxy S24 Ultra",
+      "slug": "samsung-galaxy-s24-ultra",
+      "description": "Premium Android smartphone with S Pen, 200MP camera, and AI-powered features. 6.8-inch Dynamic AMOLED display.",
+      "price": "1199.99",
+      "category": 1,
+      "stock": 20,
+      "available": true,
+      "image": "products/smartphone-pro_ultra_precise.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "Sony WH-1000XM5 Headphones",
+      "slug": "sony-wh-1000xm5-headphones",
+      "description": "Industry-leading noise canceling wireless headphones with 30-hour battery life and crystal-clear hands-free calling.",
+      "price": "399.99",
+      "category": 1,
+      "stock": 35,
+      "available": true,
+      "image": "products/wireless-headphones_ultra_precise.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "name": "MacBook Air M3",
+      "slug": "macbook-air-m3",
+      "description": "Supercharged by the M3 chip, featuring a 13.6-inch Liquid Retina display, up to 18 hours of battery life.",
+      "price": "1099.99",
+      "category": 1,
+      "stock": 15,
+      "available": true,
+      "image": "products/laptop-ultra_ultra_precise.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+      "name": "Apple Watch Series 9",
+      "slug": "apple-watch-series-9",
+      "description": "Advanced health and fitness tracking with the brightest Always-On Retina display. Features the new S9 chip.",
+      "price": "399.99",
+      "category": 1,
+      "stock": 40,
+      "available": true,
+      "image": "products/smart-watch_ultra_precise.jpg"
+    }
+},
+  {
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+      "name": "Nike Air Max 270",
+      "slug": "nike-air-max-270",
+      "description": "Lifestyle sneakers with Max Air unit in the heel for all-day comfort. Modern design meets classic Air Max DNA.",
+      "price": "149.99",
+      "category": 2,
+      "stock": 60,
+      "available": true,
+      "image": "products/running-shoes_audited.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+      "name": "Levi's 501 Original Jeans",
+      "slug": "levis-501-original-jeans",
+      "description": "The original blue jean since 1873. Straight fit with button fly and classic 5-pocket styling.",
+      "price": "89.99",
+      "category": 2,
+      "stock": 45,
+      "available": true,
+      "image": "products/denim-jeans_audited.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 8,
+    "fields": {
+      "name": "Adidas Ultraboost 22",
+      "slug": "adidas-ultraboost-22",
+      "description": "Running shoes with responsive BOOST midsole and Primeknit upper for adaptive support and comfort.",
+      "price": "189.99",
+      "category": 2,
+      "stock": 30,
+      "available": true,
+      "image": "products/running-shoes_audited.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 9,
+    "fields": {
+      "name": "Champion Reverse Weave Hoodie",
+      "slug": "champion-reverse-weave-hoodie",
+      "description": "Classic pullover hoodie with reverse weave construction to resist vertical shrinkage. Soft cotton blend.",
+      "price": "79.99",
+      "category": 2,
+      "stock": 55,
+      "available": true,
+      "image": "products/winter-jacket_audited.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 10,
+    "fields": {
+      "name": "Uniqlo Heattech Ultra Warm Crew Neck T-Shirt",
+      "slug": "uniqlo-heattech-tshirt",
+      "description": "Ultra Warm Heattech with advanced heat-generating technology. Soft, stretchy, and moisture-wicking.",
+      "price": "19.99",
+      "category": 2,
+      "stock": 80,
+      "available": true,
+      "image": "products/cotton-t-shirt_audited.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 11,
+    "fields": {
+      "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "slug": "clean-code-book",
+      "description": "Essential reading for software developers. Learn to write clean, maintainable code with practical examples.",
+      "price": "42.99",
+      "category": 3,
+      "stock": 25,
+      "available": true,
+      "image": "products/clean-code-book.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 12,
+    "fields": {
+      "name": "The Pragmatic Programmer",
+      "slug": "pragmatic-programmer-book",
+      "description": "Your journey to mastery. Classic guide to becoming a better programmer with timeless advice.",
+      "price": "39.99",
+      "category": 3,
+      "stock": 30,
+      "available": true,
+      "image": "products/pragmatic-programmer.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 13,
+    "fields": {
+      "name": "Atomic Habits",
+      "slug": "atomic-habits-book",
+      "description": "An Easy & Proven Way to Build Good Habits & Break Bad Ones. Transform your life with tiny changes.",
+      "price": "16.99",
+      "category": 3,
+      "stock": 50,
+      "available": true,
+      "image": "products/atomic-habits.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 14,
+    "fields": {
+      "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+      "slug": "instant-pot-duo-7in1",
+      "description": "7 appliances in 1: pressure cooker, slow cooker, rice cooker, steamer, sauté, yogurt maker, and warmer.",
+      "price": "79.99",
+      "category": 4,
+      "stock": 20,
+      "available": true,
+      "image": "products/instant-pot-duo.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 15,
+    "fields": {
+      "name": "Ninja Foodi Personal Blender",
+      "slug": "ninja-foodi-personal-blender",
+      "description": "Powerful personal blender with Auto-iQ technology. Perfect for smoothies, protein shakes, and frozen drinks.",
+      "price": "49.99",
+      "category": 4,
+      "stock": 35,
+      "available": true,
+      "image": "products/ninja-blender.jpg"
+    }
+  }
+]
