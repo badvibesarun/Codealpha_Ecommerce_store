@@ -1,0 +1,110 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Order #{{ order.id }} - ShopSphere{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Order #{{ order.id }}</h2>
+            <span class="badge bg-{% if order.status == 'pending' %}warning{% elif order.status == 'processing' %}info{% elif order.status == 'shipped' %}primary{% elif order.status == 'delivered' %}success{% else %}danger{% endif %} fs-6">
+                {{ order.get_status_display }}
+            </span>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Order Items</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in order.items.all %}
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                {% if item.product.image %}
+                                                <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" 
+                                                     class="me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                                {% else %}
+                                                <div class="bg-light me-3 d-flex align-items-center justify-content-center" 
+                                                     style="width: 50px; height: 50px;">
+                                                    <i class="fas fa-image text-muted"></i>
+                                                </div>
+                                                {% endif %}
+                                                <div>
+                                                    <h6 class="mb-0">{{ item.product.name }}</h6>
+                                                    <small class="text-muted">{{ item.product.category.name }}</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="price">${{ item.price }}</span></td>
+                                        <td>{{ item.quantity }}</td>
+                                        <td><span class="price">${{ item.get_cost }}</span></td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                                <tfoot>
+                                    <tr class="table-active">
+                                        <th colspan="3">Total</th>
+                                        <th><span class="price">${{ order.get_total_cost }}</span></th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5>Order Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Order Date:</strong> {{ order.created_at|date:"F d, Y g:i A" }}</p>
+                        <p><strong>Status:</strong> 
+                            <span class="badge bg-{% if order.status == 'pending' %}warning{% elif order.status == 'processing' %}info{% elif order.status == 'shipped' %}primary{% elif order.status == 'delivered' %}success{% else %}danger{% endif %}">
+                                {{ order.get_status_display }}
+                            </span>
+                        </p>
+                        <p><strong>Total:</strong> <span class="price">${{ order.get_total_cost }}</span></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Shipping Address</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-1">{{ order.first_name }} {{ order.last_name }}</p>
+                        <p class="mb-1">{{ order.address }}</p>
+                        <p class="mb-1">{{ order.city }}, {{ order.postal_code }}</p>
+                        <p class="mb-0"><strong>Email:</strong> {{ order.email }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-4">
+            <a href="{% url 'store:order_history' %}" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left"></i> Back to Order History
+            </a>
+            <a href="{% url 'store:home' %}" class="btn btn-primary">
+                <i class="fas fa-home"></i> Continue Shopping
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
