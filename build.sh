@@ -21,7 +21,17 @@ if [ -d "media/products" ] && [ "$(ls -A media/products 2>/dev/null)" ]; then
     echo "Media files found in repository:"
     ls -la media/products/ | head -10
     echo "Total media files: $(ls media/products/ | wc -l)"
+    echo "Media directory path: $(pwd)/media"
     echo "Media files are ready for serving"
+    
+    # Test if files can be accessed
+    echo "Testing file access:"
+    if [ -f "media/products/smartphone-pro_ultra_precise.jpg" ]; then
+        echo "✓ smartphone-pro_ultra_precise.jpg exists and is accessible"
+        ls -la "media/products/smartphone-pro_ultra_precise.jpg"
+    else
+        echo "✗ smartphone-pro_ultra_precise.jpg not found"
+    fi
 else
     echo "No media files found in repository"
     echo "Repository contents:"
@@ -52,6 +62,9 @@ print('JSON is valid')
     "; then
         echo "Loading data..."
         python manage.py loaddata initial_data.json --verbosity 3
+        
+        echo "Checking media configuration..."
+        python manage.py check_media
         
         echo "Verifying loaded data..."
         python manage.py shell -c "

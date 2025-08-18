@@ -27,9 +27,6 @@ urlpatterns = [
 # Serve media files in both development and production
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-# Serve static files in development only
+# Serve static files only in development (production uses whitenoise)
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-else:
-    # In production, serve media files (static files are handled by whitenoise)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
