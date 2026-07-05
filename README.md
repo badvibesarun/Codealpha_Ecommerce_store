@@ -177,7 +177,7 @@ This application is production-ready and can be deployed to various platforms:
 
 1. Fork this repository
 2. Connect to Vercel
-3. Set environment variables (see `DEPLOYMENT.md`)
+3. Set environment variables (see `docs/DEPLOYMENT.md`)
 4. Deploy automatically
 
 ### Other Platforms
@@ -186,7 +186,7 @@ This application is production-ready and can be deployed to various platforms:
 - **Railway**: Auto-deployment ready
 - **DigitalOcean**: Compatible with App Platform
 
-For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+For detailed deployment instructions, see [DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## License
 
